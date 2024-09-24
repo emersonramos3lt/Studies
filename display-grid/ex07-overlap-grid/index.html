@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 200px;
+            gap: 1rem;
+
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .wrapper > div:nth-child(1) {
+            grid-row-start: 1;
+            grid-row-end: 3;
+        } /* Aumenta a quantidade de linhas que um child pode ocupar no container */
+
+        .wrapper > div {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>

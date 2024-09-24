@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* align-items e justify-items (Igual flexbox) */
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 200px;
+
+            justify-items: auto;
+            align-items: auto; /* Mexe no alinhamento dos items */
+        }
+
+        .wrapper div {
+            background-color: royalblue;
+        }
+
+        .wrapper > div:nth-child(2) { /* Mexe no posicionamento de um único item child(2) */
+            align-self: center;
+            justify-self: center;
+        }
+
+        .wrapper div:nth-child(even) {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(10, 280px);
+            gap: 1rem;
+
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        /* Pode se criar um album de fotos com o uso de grid-column, ajudando na organização do layout */
+
+        .wrapper > div:nth-child(1) {
+            grid-column: 1 / -1;
+        } /* Mexemos na posição do child 1, onde ele irá ocupar mais espaço */
+
+        .wrapper > div:nth-child(4) {
+            grid-column: 1 / -1;
+        }
+
+        .wrapper > div:nth-child(11) {
+            grid-column: 1 / -1;
+        }
+
+        .wrapper > div:nth-child(14) {
+            grid-column: 1 / -1;
+        }
+
+        .wrapper > div:nth-child(15) {
+            grid-column: 2 / 1;
+        }
+
+        
+        
+
+        .wrapper > div {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+</body>
+</html>

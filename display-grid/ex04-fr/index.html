@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* fr = fração 
+
+        Quando não se trabalhar com valores fixos, use sempre fr
+        */
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 1fr diminui igualmente as columns em 1 fração*/
+            gap: 10px;
+            grid-auto-rows: 200px;
+        }
+
+        .wrapper div {
+            background-color: royalblue;
+        }
+
+        .wrapper div:nth-child(even) {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+</html>
