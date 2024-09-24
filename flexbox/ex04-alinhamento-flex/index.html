@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: orange;
+            height: 300px;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .item {
+            background-color: rgb(111, 111, 245);
+            color: #fff;
+
+            border: 1px solid #000;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    Valores do justify-content
+
+    flex-start = O primeiro item vai ficar na direita, no main-start
+
+    flex-end = O item vai começar no main-end, ficando na esquerda
+
+    center = Centraliza o item
+
+    space-between = Faz com que os items tenham espaçamento entre si, fazendo com que o primeiro e último elemento estejam grudados na ponta do main-start e main-end
+
+    space-evenly = Faz com que todos os items tenham espaçamento, evitando que os items ficam nas bordas dos eixos
+
+    space-around = Centraliza os elementos fazendo com que eles tenham espaços entre si
+
+    justify-content sempre e centralizado no main-axis
+    -->
+
+    <!--
+    Valores do align-items
+
+    stretch = Estica os elementos
+
+    flex-start = Sempre vai fazer com que os items grudem na parte de cima
+
+    flex-end = Sempre faz que os items grudem no final
+
+    center = Centraliza no meio do cross-axis
+
+    align-items é sempre centralizado no cross-axis
+    -->
+
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+</body>
+</html>

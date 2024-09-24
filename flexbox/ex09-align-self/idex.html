@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: orange;
+
+            display: flex;
+            flex-flow: row wrap;
+
+            align-items: flex-start; /* Valor padrão do align-self até ser configurado, ou seja dado um valor */
+            height: 400px;
+        }
+
+        .item {
+            background-color: lightgreen;
+            border: 1px solid #000;
+            text-align: center;
+            padding: 20px;
+        }
+
+        #i1 {
+            align-self: center;
+        }
+
+        #i2 {
+            align-self: auto;
+        }
+
+        #i3 {
+            align-self: flex-end;
+        }
+
+        #i4 {
+            align-self: stretch;
+        }
+
+        #i5 {
+            align-self: center;
+        }
+
+        #i6 {
+            align-self: flex-start;
+        }
+
+        #i7 {
+            align-self: stretch;
+        }
+
+    </style>
+</head>
+<body>
+    <!--
+    align-self = Funciona no cross-axis, usado em items dentro de um container flex, com valor display: flex;
+
+    VALORES:
+    auto = Coloca no cross-start
+
+    flex-start = Coloca no cross-start
+
+    flex-end = Coloca no cross-end
+
+    center = Centraliza no meio do cross-axis
+
+    stretch = Estica o elemento, fazendo com que ele fique no cross-start e cross-end do container
+    -->
+
+    <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+    </div>
+</body>
+</html>

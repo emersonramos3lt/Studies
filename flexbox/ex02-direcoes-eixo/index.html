@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        .container {
+            background-color: orange;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item {
+            background-color: rgb(111, 111, 245);
+            color: #fff;
+
+            border: 1px solid #000;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+
+    POSIÇÕES NO FLEX-DIRECTION
+
+
+        flex-direction: row; >
+        flex-diretion: row-reverse; <
+
+        row = direita
+        row-reverse = esquerda
+
+        flex-direction: column; Transforma em colunas os elementos
+        flex-direction: column-reverse; 
+
+        column = De cima para baixo
+        column-reverse = Debaixo para cima
+
+    -->
+
+    <!--
+
+    EIXOS
+
+    A partir do uso do flex-direction, é criado os Eixos(axis)
+
+    main-axis = Uma linha reta horizontal, com começo e fim
+    cross-axis = Uma linha vertical, com começo e fim
+
+    Ex: 
+    main-axis = row/reverse
+    cross-axis - column/reverse
+
+    -->
+
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+
+
+</body>
+</html>
